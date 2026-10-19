@@ -1,123 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f8f6">
-  <meta name="description" content="LESS 2027 at ICIN: application-grounded semantic extraction, task-sufficient representations and experimental validation. Workshop Call for Papers and submission requirements.">
-  <meta property="og:title" content="LESS 2027 | Application-grounded semantic extraction and communication">
-  <meta property="og:description" content="A research workshop on task-sufficient information, real applications, and experimentally validated communication systems. ICIN 2027, Pisa, Italy.">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23161619'/%3E%3Cpath d='M16 21h31M16 32h22M16 43h13' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-  <title>LESS 2027 — Learning to Extract and Send Semantics</title>
-  <style>
-    :root{--bg:#f8f8f6;--white:#fff;--ink:#17191d;--sub:#6d7077;--rule:#e1e2e1;--blue:#3059e9;--blue-dark:#2446c0;--muted:#f0f1ef;--max:1216px;--ease:cubic-bezier(.22,1,.36,1)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}a{color:inherit;text-decoration:none}button{font:inherit}::selection{color:white;background:var(--blue)}
-    .container{width:min(calc(100% - 96px),var(--max));margin-inline:auto}section[id]{scroll-margin-top:100px}
-    .topbar{height:75px;position:sticky;z-index:50;top:0;background:rgba(248,248,246,.91);border-bottom:1px solid rgba(20,25,30,.07);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
-    .topbar .container{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:11px;font-weight:680;letter-spacing:-.06em;font-size:21px;white-space:nowrap}.brand-year{color:#92949a;font-weight:550}.mark{width:24px;height:23px;display:flex;flex-direction:column;justify-content:space-evenly;align-items:flex-start}.mark i{height:2.5px;border-radius:4px;background:var(--ink);display:block}.mark i:nth-child(1){width:23px}.mark i:nth-child(2){width:16px}.mark i:nth-child(3){width:9px}.nav{display:flex;align-items:center;gap:36px}.nav a{font-size:12px;font-weight:570;color:#61636a;transition:color .15s}.nav a:hover{color:var(--ink)}.nav .nav-cta{color:white;background:var(--ink);border-radius:99px;padding:12px 19px;transition:background .2s,transform .2s}.nav .nav-cta:hover{color:white;background:var(--blue);transform:translateY(-1px)}
-    .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.17em;font-weight:720;color:#72757b}.eyebrow .dot{display:inline-block;width:6px;height:6px;margin:0 11px 2px;border-radius:50%;background:var(--blue)}
-    .hero{overflow:hidden;padding:110px 0 110px;position:relative}.hero-layout{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;min-height:520px;gap:15px}.hero-copy{position:relative;z-index:1}.hero h1{font-weight:650;letter-spacing:-.082em;line-height:.99;font-size:clamp(72px,7.1vw,114px);margin:34px 0 31px;white-space:nowrap}.hero h1 span{color:var(--blue)}.hero-desc{font-size:19px;color:#63666c;line-height:1.65;letter-spacing:-.017em;max-width:490px}.hero-info{display:flex;align-items:center;gap:16px;flex-wrap:wrap;color:#484c52;font-size:12px;font-weight:625;margin-top:34px}.hero-info .line{width:30px;height:1px;background:#babcc0}.hero-actions{display:flex;align-items:center;gap:26px;margin-top:39px;flex-wrap:wrap}.primary-btn{display:inline-flex;align-items:center;justify-content:center;gap:29px;padding:16px 20px 16px 22px;background:var(--blue);border:1px solid var(--blue);border-radius:6px;color:white;font-size:13px;font-weight:670;transition:background .18s,transform .18s}.primary-btn:hover{background:var(--blue-dark);transform:translateY(-2px)}.primary-btn svg{width:15px}.text-link{font-size:13px;font-weight:635;border-bottom:1px solid #96999f;padding-bottom:3px;transition:color .2s}.text-link:hover{color:var(--blue)}
-    .hero-art{width:100%;margin-left:10px;align-self:center;position:relative}.hero-art:after{content:"";position:absolute;bottom:6%;height:23%;left:15%;right:5%;background:radial-gradient(ellipse,rgba(48,89,233,.055),transparent 72%);filter:blur(16px);pointer-events:none}.hero-art svg{width:100%;overflow:visible}.path-a{stroke-dasharray:6 11;animation:flow 12s linear infinite}.path-b{stroke-dasharray:3 13;animation:flow 16s linear reverse infinite}@keyframes flow{to{stroke-dashoffset:-220}}
-    .hero-bottom{padding-top:80px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--rule);padding-bottom:18px;color:#989b9f;font-size:10px;letter-spacing:.13em;font-weight:650}.hero-bottom a{display:inline-flex;align-items:center;gap:8px;color:#5f6269}.hero-bottom svg{width:15px;height:15px}
-    .section-pad{padding:145px 0}.section-head{display:grid;grid-template-columns:1fr 1.7fr;gap:45px}.section-num{font-size:12px;letter-spacing:.1em;color:var(--blue);font-weight:730;margin-bottom:21px}.section-title{font-size:clamp(44px,4.5vw,70px);letter-spacing:-.067em;line-height:1.11;font-weight:615;margin:0}.section-lead{font-size:clamp(24px,2.7vw,37px);letter-spacing:-.047em;font-weight:510;line-height:1.29;margin:0;max-width:750px}.section-copy{max-width:640px;font-size:16px;line-height:1.85;color:var(--sub);margin-top:28px}
-    .examples{margin-top:94px;border-top:1px solid var(--rule)}.example{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:30px;padding:30px 0;border-bottom:1px solid var(--rule);align-items:start}.ex-label{font-size:13px;font-weight:660}.ex-before{font-size:16px;color:#858890;letter-spacing:-.015em}.ex-after{font-size:16px;font-weight:630;letter-spacing:-.025em}.ex-after:before{content:"↗";color:var(--blue);margin-right:13px;font-size:20px;font-weight:400}.example-header{color:#a0a2a6;font-size:10px;text-transform:uppercase;letter-spacing:.16em;font-weight:750;padding-bottom:19px}
-    .dark-section{background:#17191c;color:#f6f6f4;padding:123px 0 140px;overflow:hidden}.dark-section .eyebrow{color:#a6acb9}.dark-section .section-title{max-width:850px}.dark-section .section-title em{font-style:normal;color:#899eff}.dark-section .dark-intro{color:#a8aab0;font-size:17px;line-height:1.75;max-width:720px;margin-top:33px}
-    .topics{display:grid;grid-template-columns:repeat(3,1fr);column-gap:35px;margin-top:79px;border-top:1px solid #41434a}.topic{min-height:196px;padding:31px 0 28px;border-bottom:1px solid #41434a;display:flex;flex-direction:column;justify-content:space-between;gap:37px}.topic-index{font-size:11px;color:#9598a3;font-weight:650;letter-spacing:.06em}.topic-title{font-size:19px;line-height:1.34;letter-spacing:-.025em;font-weight:555;max-width:300px}.topic-title span{color:#778efb}
-    .cfp{padding-bottom:125px}.cfp-head{display:grid;grid-template-columns:1fr 1.35fr;gap:55px}.cfp-main{font-size:clamp(25px,3.1vw,44px);letter-spacing:-.055em;font-weight:570;line-height:1.3;margin:0}.cfp-copy{max-width:750px;margin-top:34px;color:var(--sub);font-size:16px;line-height:1.8}.principles{margin-top:78px;border-top:1px solid var(--rule);display:grid;grid-template-columns:repeat(3,1fr);gap:35px}.principle{padding-top:27px}.principle small{font-size:11px;color:var(--blue);font-weight:750}.principle h3{font-size:19px;letter-spacing:-.035em;margin:31px 0 12px;font-weight:650}.principle p{color:var(--sub);font-size:14px;line-height:1.78;max-width:315px;margin:0}.submission-note{margin-top:77px;display:flex;align-items:center;justify-content:space-between;padding:25px 27px;background:#edeee9;gap:30px}.submission-note strong{font-weight:635;font-size:15px}.submission-note span{font-size:13px;color:#6f7175;display:block;margin-top:7px}.submission-note a{white-space:nowrap;font-size:13px;font-weight:630;color:var(--blue)}
-    .dates-section{border-top:1px solid var(--rule);padding:117px 0 135px}.dates-title{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:60px}.dates-note{font-size:12px;color:#73777e;max-width:270px;line-height:1.6;text-align:right}.date-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule)}.date{padding:31px 20px 0 0;min-height:207px;position:relative}.date:not(:last-child){border-right:1px solid var(--rule);padding-left:23px}.date:first-child{padding-left:0}.date:last-child{padding-left:23px}.date-type{font-size:11px;color:#898d93;letter-spacing:.1em;text-transform:uppercase;font-weight:700}.date-num{font-size:61px;letter-spacing:-.078em;line-height:1.1;margin:30px 0 5px;font-weight:580}.date-num span{font-size:19px;letter-spacing:-.03em;color:#9b9da3;font-weight:490;margin-left:9px}.date-name{font-size:13px;font-weight:650;color:#45484e}.date:last-child .date-num{color:var(--blue)}
-    .people-section{background:#eeefeb;padding:126px 0 128px}.people-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:65px}.people-desc{font-size:13px;color:#787b80;max-width:320px;line-height:1.65}.people-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.person{background:#f9f9f7;padding:40px 40px 42px;min-height:268px;display:flex;flex-direction:column;justify-content:space-between;gap:43px}.person-role{font-size:11px;letter-spacing:.11em;color:#909399;text-transform:uppercase;font-weight:710}.person-name{font-size:33px;letter-spacing:-.055em;font-weight:600;margin:0 0 6px}.person-affil{font-size:15px;color:#70747a;margin:0}.person-email{font-size:13px;font-weight:600;color:var(--blue);display:inline-flex;align-items:center;gap:12px;word-break:break-word}.person-email:hover{text-decoration:underline}.person-email svg{width:15px;flex:0 0 15px}
-    footer{padding:56px 0 33px;background:#17191c;color:#f2f3f4}.footer-main{display:flex;justify-content:space-between;align-items:flex-start;gap:35px;padding-bottom:90px}.footer-head{font-size:51px;letter-spacing:-.07em;font-weight:620;margin:0}.footer-sub{margin-top:12px;color:#aaaeb8;font-size:13px}.footer-link{border-bottom:1px solid #757983;padding-bottom:5px;font-size:13px;margin-top:16px}.footer-link:hover{color:#94aaff}.footer-bottom{display:flex;justify-content:space-between;gap:25px;border-top:1px solid #45484d;padding-top:24px;color:#8b8f96;font-size:11px}.footer-bottom a:hover{color:white}
-    :focus-visible{outline:3px solid var(--blue);outline-offset:4px}
-    @media(max-width:1060px){.hero h1{font-size:clamp(65px,7.3vw,86px)}.hero-layout{gap:0}.nav{gap:21px}}
-    @media(max-width:800px){.container{width:min(calc(100% - 48px),var(--max))}.topbar{height:67px}.nav .mobile-hide{display:none}.hero{padding:82px 0 60px}.hero-layout{display:flex;flex-direction:column;align-items:stretch}.hero h1{font-size:clamp(62px,11.5vw,95px);margin-top:27px}.hero-desc{font-size:17px}.hero-art{width:min(100%,550px);margin:32px auto 0}.hero-bottom{padding-top:0}.section-pad{padding:93px 0}.section-head,.cfp-head{grid-template-columns:1fr;gap:37px}.section-lead{font-size:29px}.examples{margin-top:61px}.example{grid-template-columns:1fr 1fr;gap:12px}.example .ex-label{grid-column:1/-1;margin-bottom:5px}.example-header{display:none}.dark-section{padding:95px 0}.topics{grid-template-columns:1fr 1fr}.date-grid{grid-template-columns:1fr 1fr}.date:nth-child(3){padding-left:0;border-left:0}.date:nth-child(2){border-right:0}.date{border-bottom:1px solid var(--rule);padding-bottom:27px;min-height:184px}.dates-section{padding:90px 0}.people-section{padding:95px 0}.person{padding:30px}}
-    @media(max-width:570px){.container{width:calc(100% - 38px)}.nav{gap:0}.nav>a:not(.nav-cta){display:none}.nav .nav-cta{font-size:11px;padding:10px 14px}.brand{font-size:19px}.hero{padding-top:77px}.hero h1{font-size:clamp(53px,12.2vw,72px);letter-spacing:-.085em;white-space:normal}.hero-info{gap:10px;font-size:11px}.hero-actions{gap:25px}.hero-art{margin-top:19px}.hero-bottom{font-size:9px;letter-spacing:.05em}.section-title{font-size:47px}.section-lead{font-size:27px}.example{padding:22px 0}.ex-before,.ex-after{font-size:14px}.dark-section .section-title{font-size:44px}.topics{grid-template-columns:1fr;gap:0;margin-top:55px}.topic{min-height:116px;padding:21px 0;gap:17px}.topic-title{font-size:18px;max-width:none}.cfp-main{font-size:30px}.principles{grid-template-columns:1fr;gap:26px;margin-top:50px}.principle{padding-top:20px}.principle h3{margin-top:15px}.principle p{max-width:none}.submission-note{margin-top:57px;align-items:flex-start;flex-direction:column;gap:16px;padding:21px}.dates-title,.people-head{display:block}.dates-note{text-align:left;margin:20px 0 0}.date-num{font-size:50px}.date-num span{display:block;margin:4px 0 0;font-size:16px}.date{min-height:190px}.people-grid{grid-template-columns:1fr}.people-desc{margin-top:23px}.person{min-height:230px}.person-name{font-size:31px}.footer-main{display:block;padding-bottom:65px}.footer-head{font-size:43px}.footer-link{display:inline-block;margin-top:32px}.footer-bottom{flex-direction:column;gap:9px;line-height:1.6}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
-
-    /* Scientific editorial design: retain the original visual identity with less promotional type. */
-    .nav{gap:25px}.nav a{font-size:12px}
-    .hero{padding:85px 0 60px}.hero-layout{grid-template-columns:1.1fr .9fr;min-height:520px}
-    .hero h1{font-size:clamp(48px,5.4vw,79px);letter-spacing:-.065em;line-height:1.08;white-space:normal;margin:32px 0 19px;max-width:800px}
-    .hero-subtitle{font-size:14px;letter-spacing:-.01em;font-weight:680;margin:0 0 16px;color:var(--ink)}
-    .hero-desc{font-size:16px;line-height:1.75;max-width:555px;margin:0}
-    .hero-art{margin-left:0}
-    .hero-bottom{padding-top:42px}
-    .scope-section{padding:115px 0 120px}.scope-section .section-title{font-size:clamp(42px,4.05vw,65px)}
-    .scope-section .section-lead{font-size:clamp(23px,2.4vw,33px);line-height:1.36}
-    .scope-follow{margin-top:16px}.section-copy strong{font-weight:650;color:#353941}
-    .examples{margin-top:72px}.example{padding:24px 0}.example-header{padding-bottom:15px}
-    .example-footnote{margin:19px 0 0;font-size:12px;line-height:1.6;color:#83868b}
-    .requirement-section{background:#1a1d23;color:#f3f4f6;padding:110px 0 100px}
-    .requirement-header{display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .inverted-num{color:#b5c3ff;margin:0}.requirement-rule{border:1px solid #4e5260;color:#bcc0ca;padding:9px 12px;font-size:10px;font-weight:700;letter-spacing:.11em}
-    .requirement-title{font-size:clamp(40px,5.1vw,74px);font-weight:575;letter-spacing:-.065em;line-height:1.12;margin:41px 0 26px}
-    .requirement-title em{font-style:normal;color:#a3b5ff}
-    .requirement-lead{max-width:860px;color:#bac0c9;font-size:18px;line-height:1.76;letter-spacing:-.01em;margin:0 0 68px}
-    .requirement-lead strong,.requirement-caveat strong{color:#fff;font-weight:650}
-    .requirement-label{font-size:11px;letter-spacing:.13em;font-weight:720;color:#b7bcc6;margin-bottom:19px;text-transform:uppercase}
-    .evidence-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #50545c}
-    .evidence-grid li{min-height:165px;display:flex;gap:17px;padding:27px 17px 25px 0;border-bottom:1px solid #50545c}
-    .evidence-index{font-size:11px;font-weight:730;color:#9db2ff;padding-top:5px;min-width:25px}
-    .evidence-grid h3{font-size:17px;font-weight:610;letter-spacing:-.025em;margin:0 0 11px}
-    .evidence-grid p{font-size:13px;line-height:1.68;color:#abb0ba;margin:0;max-width:300px}
-    .interpretation{border-top:1px solid #50545c;border-bottom:1px solid #50545c;display:grid;grid-template-columns:1fr 1fr;margin-top:60px}
-    .interpretation-cell{padding:29px 30px 31px 0}.interpretation-cell + .interpretation-cell{border-left:1px solid #50545c;padding-left:32px}
-    .interpretation-cap{font-size:10px;font-weight:750;letter-spacing:.12em;color:#b6bac1}
-    .interpretation-cap.in-scope{color:#b0c2ff}
-    .interpretation p{font-size:15px;line-height:1.75;color:#d4d6dd;margin:17px 0 0}
-    .requirement-caveat{font-size:14px;line-height:1.8;color:#aeb4c0;margin:35px 0 0;max-width:940px}
-    .detailed-cfp{padding:120px 0 115px}.detailed-cfp .section-title{font-size:clamp(52px,5.2vw,80px)}
-    .cfp-head{grid-template-columns:.78fr 1.22fr;gap:75px}.cfp-label{color:#7b7e84;font-size:13px;line-height:1.6;margin-top:30px}
-    .cfp-main{font-size:clamp(25px,2.4vw,34px);line-height:1.4;letter-spacing:-.035em}
-    .cfp-copy{font-size:15px;line-height:1.84;margin:22px 0 0;max-width:740px}
-    .cfp-separator{border-bottom:1px solid var(--rule);margin:73px 0 0}
-    .cfp-two-col{display:grid;grid-template-columns:.78fr 1.22fr;gap:75px;padding:48px 0 65px;border-bottom:1px solid var(--rule)}
-    .mini-label{font-size:10px;font-weight:770;letter-spacing:.14em;color:#646a72}
-    .block-heading{font-size:30px;letter-spacing:-.045em;font-weight:590;line-height:1.25;margin:17px 0 0}
-    .research-questions{margin:0;padding:0;list-style:none}
-    .research-questions li{position:relative;padding:0 0 18px 24px;margin-bottom:15px;border-bottom:1px solid #e6e7e4;font-size:15px;line-height:1.67;color:#474b52}
-    .research-questions li:before{content:'+';position:absolute;left:0;top:0;font-weight:730;color:var(--blue)}
-    .research-questions li:last-child{border-bottom:none;margin-bottom:0}
-    .topics-header{padding:70px 0 27px;display:flex;justify-content:space-between;align-items:end;gap:45px;scroll-margin-top:95px}
-    .topics-header p{font-size:13px;line-height:1.7;color:#767a81;max-width:380px;margin:0}
-    .topic-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #cfd2d1;border-left:1px solid #cfd2d1}
-    .topic-group{padding:30px 32px 27px;border-right:1px solid #cfd2d1;border-bottom:1px solid #cfd2d1}
-    .topic-head{display:flex;gap:16px;align-items:baseline;padding-bottom:24px;border-bottom:1px solid #e0e2df;margin-bottom:21px}
-    .topic-head span{font-weight:740;font-size:11px;color:var(--blue)}
-    .topic-head h4{font-size:20px;letter-spacing:-.03em;line-height:1.4;margin:0;font-weight:625}
-    .topic-group ul{list-style:none;margin:0;padding:0}.topic-group li{padding:0 0 12px 17px;position:relative;font-size:14px;line-height:1.62;color:#62676f}
-    .topic-group li:before{content:'';width:4px;height:4px;background:#a6acb3;border-radius:50%;position:absolute;left:0;top:.75em}
-    .applications-block{padding-top:65px;margin-top:0}.applications-block p{font-size:15px;line-height:1.82;color:#666a71;margin:0 0 15px}
-    .submission-box{background:#eceeeb;padding:35px 39px;margin-top:60px;display:flex;justify-content:space-between;align-items:end;gap:36px}
-    .submission-box h3{font-size:24px;font-weight:625;letter-spacing:-.035em;margin:13px 0 12px}
-    .submission-box p{color:#61666c;font-size:14px;line-height:1.76;max-width:630px;margin:0}
-    .submission-box .submission-fine{font-size:12px;color:#868a90;margin-top:12px}
-    .submission-box a{flex:0 0 auto;font-size:13px;font-weight:700;white-space:nowrap;color:var(--blue);border-bottom:1px solid #929fe3;padding-bottom:5px}
-    .dates-section{padding:110px 0}.dates-section .section-title{font-size:clamp(44px,4.3vw,64px)}
-    .people-section{padding:100px 0}.people-section .section-title{font-size:clamp(44px,4.3vw,64px)}
-    @media(max-width:1100px){.nav{gap:15px}.nav a{font-size:11px}.hero h1{font-size:clamp(43px,5.5vw,70px)}.hero-layout{gap:0}.cfp-head,.cfp-two-col{gap:40px}}
-    @media(max-width:800px){.hero{padding:70px 0 45px}.hero h1{font-size:clamp(50px,9vw,74px);max-width:650px}.hero-art{margin-top:23px}.hero-bottom{padding-top:0}.scope-section{padding:88px 0}.requirement-section{padding:86px 0}.requirement-title{font-size:clamp(42px,7vw,65px)}.evidence-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cfp-head,.cfp-two-col{grid-template-columns:1fr;gap:30px}.detailed-cfp{padding:90px 0}.cfp-separator{margin-top:55px}.topics-header{align-items:start}.submission-box{align-items:start;flex-direction:column;gap:24px}}
-    @media(max-width:570px){.hero h1{font-size:clamp(42px,11.4vw,61px);letter-spacing:-.065em}.hero-subtitle{font-size:13px}.hero-desc{font-size:15px}.hero-actions{gap:21px}.hero-info{line-height:1.5}.scope-section .section-title{font-size:40px}.scope-section .section-lead{font-size:24px}.scope-follow{margin-top:10px}.example-footnote{font-size:11px}.requirement-section{padding:73px 0}.requirement-header{align-items:start;flex-direction:column;gap:16px}.requirement-title{font-size:43px;margin-top:30px}.requirement-lead{font-size:16px;margin-bottom:46px}.evidence-grid{grid-template-columns:1fr}.evidence-grid li{min-height:0;padding:22px 5px 23px 0}.interpretation{grid-template-columns:1fr;margin-top:43px}.interpretation-cell{padding:25px 0}.interpretation-cell + .interpretation-cell{border-left:0;border-top:1px solid #50545c;padding-left:0}.interpretation p{font-size:14px}.detailed-cfp .section-title{font-size:55px}.cfp-main{font-size:26px}.cfp-copy{font-size:14px}.cfp-two-col{padding:38px 0 46px;gap:24px}.block-heading{font-size:27px}.research-questions li{font-size:14px}.topics-header{flex-direction:column;gap:15px;padding-top:52px}.topic-groups{grid-template-columns:1fr}.topic-group{padding:25px 23px}.topic-head{gap:13px}.topic-head h4{font-size:19px}.topic-group li{font-size:13px}.submission-box{padding:26px 22px;margin-top:43px}.submission-box a{white-space:normal}.date-num{font-size:47px}}
-    @media print{.topbar{position:static}.hero,.scope-section,.requirement-section,.detailed-cfp,.dates-section,.people-section{padding-top:34px;padding-bottom:34px}.hero-art{display:none}.hero-layout{min-height:0}.requirement-section{background:#fff!important;color:#111!important}.requirement-lead,.evidence-grid p,.requirement-caveat,.interpretation p{color:#333!important}.requirement-title em{color:#3059e9}.evidence-grid li,.interpretation,.interpretation-cell{border-color:#bbb!important}.topic-group{break-inside:avoid}.submission-box{background:#efefef}.hero-bottom{display:none}}
-    @media(max-width:570px){.hero-bottom{gap:11px;align-items:flex-start}.hero-bottom>span{max-width:56%;line-height:1.5}.hero-bottom a{max-width:40%;flex:0 0 40%;text-align:right;justify-content:flex-end;line-height:1.5}}
-  </style>
-</head>
-<body>
-  <header class="topbar">
-    <div class="container">
-      <a class="brand" href="#top" aria-label="LESS 2027 home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>LESS <span class="brand-year">2027</span></span></a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="mobile-hide" href="#about">Scope</a>
-        <a class="mobile-hide" href="#requirement">Submission requirement</a>
-        <a class="mobile-hide" href="#topics">Topics</a>
-        <a class="mobile-hide" href="#dates">Dates</a>
-        <a class="nav-cta" href="#cfp">Call for Papers <span aria-hidden="true">&nearr;</span></a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-heading">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f8f6"><meta name="description" content="LESS 2027: Learning to Extract and Send Semantics, an ICIN 2027 workshop in Pisa focused on concrete application-grounded research."><meta property="og:title" content="LESS 2027 — Learning to Extract and Send Semantics"><meta property="og:description" content="LESS 2027: Learning to Extract and Send Semantics, an ICIN 2027 workshop in Pisa focused on concrete application-grounded research."><meta property="og:type" content="website"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23161619'/%3E%3Cpath d='M16 21h31M16 32h22M16 43h13' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E"><link rel="stylesheet" href="styles.css"><title>LESS 2027 — Learning to Extract and Send Semantics</title></head><body><header class="topbar"><div class="container"><a class="brand" href="index.html" aria-label="LESS 2027 home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>LESS <span class="brand-year">2027</span></span></a><nav class="desktop-nav" aria-label="Primary navigation"><a href="index.html" aria-current="page" >Home</a><a href="program.html"  >Program</a><a href="committees.html"  >Committees</a><a href="call-for-papers.html"  class="nav-action">Call for Papers</a><a href="submission.html"  >Submission</a><a href="authors.html"  >Authors</a><a href="contact.html"  >Contact</a></nav><details class="mobile-menu"><summary aria-label="Open menu">☰ &nbsp; Menu</summary><nav aria-label="Mobile navigation"><a href="index.html" aria-current="page" >Home</a><a href="program.html"  >Program</a><a href="committees.html"  >Committees</a><a href="call-for-papers.html"  class="nav-action">Call for Papers</a><a href="submission.html"  >Submission</a><a href="authors.html"  >Authors</a><a href="contact.html"  >Contact</a></nav></details></div></header><main><section class="hero home-hero" aria-labelledby="hero-heading">
       <div class="container">
         <div class="hero-layout">
           <div class="hero-copy">
@@ -125,7 +6,7 @@
             <h1 id="hero-heading">Application-driven<br><span>semantic extraction.</span></h1>
             <p class="hero-subtitle">Learning to Extract and Send Semantics</p><p class="hero-desc">Defining, extracting, communicating and validating information required by specific downstream applications, from source observations to measurable system outcomes.</p>
             <div class="hero-info"><span>15 March 2027</span><span class="line" aria-hidden="true"></span><span>Pisa, Italy</span><span class="line" aria-hidden="true"></span><span>Co-located with ICIN 2027</span></div>
-            <div class="hero-actions"><a class="primary-btn" href="#cfp">Read the detailed Call for Papers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="text-link" href="#requirement">Submission requirement <span aria-hidden="true">&nearr;</span></a></div>
+            <div class="hero-actions"><a class="primary-btn" href="call-for-papers.html">Read the detailed Call for Papers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="text-link" href="call-for-papers.html#requirement">Submission requirement <span aria-hidden="true">&nearr;</span></a></div>
           </div>
           <div class="hero-art" aria-hidden="true">
             <svg viewBox="0 0 600 530" role="img" focusable="false">
@@ -155,9 +36,7 @@
         </div>
         <div class="hero-bottom"><span>RESEARCH FOCUS / APPLICATION-LEVEL SEMANTIC SUFFICIENCY</span><a href="#about">EXPLORE THE SCOPE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v17m-6-6 6 6 6-6"/></svg></a></div>
       </div>
-    </section>
-
-    <section class="section-pad scope-section" id="about" aria-labelledby="scope-title">
+    </section><section class="home-organizers"><div class="container"><div class="organizer-band"><div class="organizer-label"><span>Workshop organizers</span><a href="committees.html">Meet the organizers ↗</a></div><article class="organizer-mini"><div class="portrait"><span aria-hidden="true">LB</span><img src="assets/luca-borgianni.jpg" alt="Portrait of Luca Borgianni" loading="lazy"></div><div><h3>Luca Borgianni</h3><p>University of Pisa, Italy</p></div></article><article class="organizer-mini"><div class="portrait"><span aria-hidden="true">ST</span><img src="assets/sebastian-troia.jpg" alt="Portrait of Sebastian Troia" loading="lazy"></div><div><h3>Sebastian Troia</h3><p>Politecnico di Milano, Italy</p></div></article></div></div></section><section class="section-pad scope-section home-scope" id="about" aria-labelledby="scope-title">
       <div class="container">
         <div class="section-head">
           <div><div class="section-num">01 / SCOPE</div><h2 class="section-title" id="scope-title">From observations<br>to application decisions.</h2></div>
@@ -175,86 +54,9 @@
         </div>
         <p class="example-footnote">Illustrative mappings, not prescribed use cases or results. A submission must define its own application requirements and evaluate them.</p>
       </div>
-    </section>
-
-    <section class="requirement-section" id="requirement" aria-labelledby="requirement-title">
-      <div class="container">
-        <div class="requirement-header">
-          <div class="section-num inverted-num">02 / APPLICATION-GROUNDED EVALUATION REQUIREMENT</div>
-          <div class="requirement-rule">CORE SUBMISSION REQUIREMENT</div>
-        </div>
-        <h2 id="requirement-title" class="requirement-title">A concrete application is<br><em>required, not illustrative.</em></h2>
-        <p class="requirement-lead">Every submission must be grounded in a <strong>concrete and credible application scenario</strong>. An application presented only as motivation is not sufficient. Authors are expected to establish what the downstream application actually needs and to measure the consequences of communicating a derived representation rather than the original observations.</p>
-        <div class="requirement-label">Each paper is expected to make the following explicit</div>
-        <ol class="evidence-grid">
-          <li><span class="evidence-index">01</span><div><h3>Source observations</h3><p>Which physical measurements, signals, traces or original source data are available?</p></div></li>
-          <li><span class="evidence-index">02</span><div><h3>Application &amp; requirements</h3><p>What downstream task is being performed? Which information does that task require?</p></div></li>
-          <li><span class="evidence-index">03</span><div><h3>Extracted representation</h3><p>How is task-relevant information extracted and represented (e.g., event, state, intent, feature or embedding)?</p></div></li>
-          <li><span class="evidence-index">04</span><div><h3>Communicated vs. omitted</h3><p>What is sent to the receiver, and which source-level information is not communicated?</p></div></li>
-          <li><span class="evidence-index">05</span><div><h3>Application-level performance</h3><p>How well does the receiving application accomplish its task using the communicated information?</p></div></li>
-          <li><span class="evidence-index">06</span><div><h3>System-level impact</h3><p>What changes in communication, computation or overall system operation, and what trade-offs are observed?</p></div></li>
-        </ol>
-        <div class="interpretation">
-          <div class="interpretation-cell"><span class="interpretation-cap">NOT SUFFICIENT ON ITS OWN</span><p>A generic semantic encoder evaluated only through compression, reconstruction or an abstract similarity score, with an application merely cited as a possible motivation.</p></div>
-          <div class="interpretation-cell"><span class="interpretation-cap in-scope">APPLICATION-GROUNDED CONTRIBUTION</span><p>A wearable sensing system specifying which movement variable a downstream task needs, extracting it from IMU data, and evaluating task performance together with transmitted information and processing costs.</p></div>
-        </div>
-        <p class="requirement-caveat">Physical deployments are encouraged but <strong>not mandatory</strong>. Real datasets, traces, prototypes, testbeds, emulation environments and realistic system models are all welcome when the application-level evaluation is credible.</p>
-      </div>
-    </section>
-
-    <section class="section-pad cfp detailed-cfp" id="cfp" aria-labelledby="cfp-title">
-      <div class="container">
-        <div class="cfp-head">
-          <div><div class="section-num">03 / CALL FOR PAPERS</div><h2 class="section-title" id="cfp-title">Call for<br>Papers.</h2><p class="cfp-label">LESS 2027 &middot; Learning to Extract and Send Semantics</p></div>
-          <div>
-            <p class="cfp-main">Application-grounded extraction, representation and communication of task-sufficient information.</p>
-            <p class="cfp-copy">Networked intelligent systems operate on heterogeneous streams from sensors, wearables, biomedical platforms, microphones, cameras, radar and industrial equipment. Yet many receiving applications require only a task-sufficient representation rather than the complete source stream. LESS invites research on identifying this information, deriving it from observations, communicating it across networked systems, and experimentally verifying its sufficiency.</p>
-            <p class="cfp-copy">The workshop welcomes methodological advances together with implementations and experimental validation. Contributions should connect the original observations, the application information requirements, the representation and communication mechanism, and the resulting application- and system-level effects.</p>
-          </div>
-        </div>
-        <div class="cfp-separator"></div>
-        <div class="cfp-two-col">
-          <div><div class="mini-label">TECHNICAL PERSPECTIVE</div><h3 class="block-heading">Research questions</h3></div>
-          <div><ul class="research-questions"><li>How are downstream information requirements expressed, negotiated or updated?</li><li>Which representations preserve information sufficient for the application task?</li><li>Where should extraction occur across device, edge, network and cloud resources?</li><li>How are semantic freshness, uncertainty, relevance and requests for further information handled?</li><li>How can application utility and communication/computing costs be measured jointly?</li></ul></div>
-        </div>
-        <div class="topics-header" id="topics"><div><div class="mini-label">TOPICS OF INTEREST</div><h3 class="block-heading">Technical areas.</h3></div><p>Including, but not limited to, the following topics. The application-grounded requirement applies across all areas.</p></div>
-        <div class="topic-groups">
-          <section class="topic-group" aria-labelledby="topic-1"><div class="topic-head"><span>01</span><h4 id="topic-1">Requirements &amp; representations</h4></div><ul>
-            <li>Application-grounded semantic communication</li><li>Application-level semantic extraction</li><li>Task-sufficient semantic representations</li><li>Goal-oriented and task-oriented communication</li><li>Representation of application information requirements</li><li>Semantic interfaces between applications and networks</li>
-          </ul></section>
-          <section class="topic-group" aria-labelledby="topic-2"><div class="topic-head"><span>02</span><h4 id="topic-2">Extraction &amp; distributed intelligence</h4></div><ul>
-            <li>Semantic extraction from continuous sensor streams</li><li>Multimodal semantic representations</li><li>Edge AI for semantic extraction</li><li>Device&ndash;edge&ndash;cloud semantic processing</li><li>Distributed and split inference</li><li>Adaptive semantic representations and semantic update generation</li>
-          </ul></section>
-          <section class="topic-group" aria-labelledby="topic-3"><div class="topic-head"><span>03</span><h4 id="topic-3">Communication &amp; adaptation</h4></div><ul>
-            <li>Event-, state-, intent-, token-, feature- and embedding-based communication</li><li>Semantic filtering and relevance-aware communication</li><li>Application-aware and semantic-aware networking</li><li>Semantic freshness and Value of Information</li><li>Uncertainty and confidence in semantic representations</li><li>Processing and prioritization of semantic traffic</li><li>Mechanisms for requesting additional or source-level information</li>
-          </ul></section>
-          <section class="topic-group" aria-labelledby="topic-4"><div class="topic-head"><span>04</span><h4 id="topic-4">Sufficiency &amp; experimental evidence</h4></div><ul>
-            <li>Semantic sufficiency metrics and interoperability</li><li>Benchmarks for application utility versus communicated information</li><li>Experimental systems, datasets, testbeds and real-world deployments</li>
-          </ul></section>
-        </div>
-        <div class="cfp-two-col applications-block">
-          <div><div class="mini-label">APPLICATION DOMAINS</div><h3 class="block-heading">Where this applies.</h3></div>
-          <div><p>Relevant applications include digital health, wearable systems, sports sensing, speech and audio, industrial IoT, robotics, smart environments, intelligent transportation, autonomous systems, and integrated sensing and communication.</p><p>Cross-domain submissions are especially encouraged when they connect a concrete application need to a measurable communication or computing benefit.</p></div>
-        </div>
-        <div class="submission-box" id="submission">
-          <div><div class="mini-label">SUBMISSION INFORMATION</div><h3>Author information &amp; submission</h3><p>The final paper format, page limits, submission portal and author instructions have not yet been confirmed. They will be linked here in accordance with the official ICIN 2027 guidance.</p><p class="submission-fine">Do not interpret this placeholder as a submission link. The dates below are drawn from the proposal and remain provisional.</p></div>
-          <a href="https://www.icin-conference.org/" target="_blank" rel="noopener noreferrer">ICIN conference website <span aria-hidden="true">&nearr;</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="dates-section" id="dates">
+    </section><section class="home-critical"><div class="container home-critical-grid"><div><div class="section-num">SUBMISSION PRINCIPLE</div><h2>A use case is <em>not a footnote.</em></h2></div><div><p><strong>Every paper must identify a concrete and credible application scenario.</strong> The use case cannot be limited to motivation: authors should explain the original observations, what the downstream task requires, what is extracted and transmitted, and how task performance and communication/computing impact are evaluated.</p><a href="call-for-papers.html#requirement">The six application-grounded requirements ↗</a></div></div></section><section class="dates-section" id="dates">
       <div class="container"><div class="dates-title"><div><div class="section-num">04 / IMPORTANT DATES</div><h2 class="section-title">Important dates.</h2></div><p class="dates-note">Proposed deadlines from the workshop submission. Subject to final confirmation by the organizers and ICIN 2027.</p></div>
         <div class="date-grid"><div class="date"><div class="date-type">Proposed</div><div class="date-num">03 <span>Jan 2027</span></div><div class="date-name">Paper submission</div></div><div class="date"><div class="date-type">Proposed</div><div class="date-num">18 <span>Jan 2027</span></div><div class="date-name">Acceptance notification</div></div><div class="date"><div class="date-type">Proposed</div><div class="date-num">07 <span>Feb 2027</span></div><div class="date-name">Camera-ready submission</div></div><div class="date"><div class="date-type">Workshop date*</div><div class="date-num">15 <span>Mar 2027</span></div><div class="date-name">LESS 2027 · Pisa, Italy</div></div></div>
         <p style="color:#92959b;font-size:11px;line-height:1.6;margin-top:20px">* Workshop scheduling is subject to the final ICIN 2027 program. The host conference runs 15–18 March 2027.</p>
       </div>
-    </section>
-
-    <section class="people-section" id="organizers"><div class="container"><div class="people-head"><div><div class="section-num">05 / ORGANIZATION</div><h2 class="section-title">Organizers.</h2></div><p class="people-desc">LESS is organized by researchers working across intelligent networking, AI-driven systems, and edge intelligence.</p></div>
-      <div class="people-grid"><article class="person"><div class="person-role">Workshop organizer</div><div><h3 class="person-name">Luca Borgianni</h3><p class="person-affil">University of Pisa, Italy</p></div><a class="person-email" href="mailto:luca.borgianni@unipi.it">luca.borgianni@unipi.it <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 16 16 4M7 4h9v9"/></svg></a></article><article class="person"><div class="person-role">Workshop organizer</div><div><h3 class="person-name">Sebastian Troia</h3><p class="person-affil">Politecnico di Milano, Italy</p></div><a class="person-email" href="mailto:sebastian.troia@polimi.it">sebastian.troia@polimi.it <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 16 16 4M7 4h9v9"/></svg></a></article></div>
-      </div></section>
-  </main>
-
-  <footer><div class="container"><div class="footer-main"><div><p class="footer-head">LESS 2027<span style="color:#8297ff">.</span></p><p class="footer-sub">Learning to Extract and Send Semantics.</p></div><a class="footer-link" href="https://www.icin-conference.org/" target="_blank" rel="noopener noreferrer">Explore ICIN 2027 ↗</a></div><div class="footer-bottom"><span>LESS 2027 · Pisa, Italy · An ICIN 2027 workshop</span><span>Scientific workshop website · Submission details subject to official ICIN 2027 guidance</span></div></div></footer>
-</body>
-</html>
+    </section><section class="content-section"><div class="container content-grid"><div class="content-label">Explore LESS 2027</div><ul class="academic-list"><li><strong><a href="call-for-papers.html">Call for Papers ↗</a></strong>Detailed scope, technical topics and the application-grounded research requirement.</li><li><strong><a href="submission.html">Submission ↗</a></strong>What a contribution is expected to establish and submission details as they become official.</li><li><strong><a href="program.html">Program ↗</a></strong>Planned half-day format and forthcoming final schedule.</li></ul></div></section></main><footer><div class="container"><div class="footer-main"><div><p class="footer-head">LESS 2027<span style="color:#8297ff">.</span></p><p class="footer-sub">Learning to Extract and Send Semantics.</p></div><a class="footer-link" href="https://www.icin-conference.org/" target="_blank" rel="noopener noreferrer">ICIN 2027 ↗</a></div><div class="footer-bottom"><span>LESS 2027 · Pisa, Italy · An ICIN 2027 workshop</span><span>Program, dates and submission information subject to final ICIN guidance</span></div></div></footer><script>document.querySelectorAll('.portrait img').forEach(img=>{const show=()=>img.parentElement.classList.add('loaded');img.addEventListener('load',show);if(img.complete&&img.naturalWidth)show()})</script></body></html>
