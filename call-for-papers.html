@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f8f6"><meta name="description" content="Detailed scientific CFP, topics and application-grounded evaluation requirements for LESS 2027."><meta property="og:title" content="Call for Papers | LESS 2027"><meta property="og:description" content="Detailed scientific CFP, topics and application-grounded evaluation requirements for LESS 2027."><meta property="og:type" content="website"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23161619'/%3E%3Cpath d='M16 21h31M16 32h22M16 43h13' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E"><link rel="stylesheet" href="styles.css"><title>Call for Papers | LESS 2027</title></head><body><header class="topbar"><div class="container"><a class="brand" href="index.html" aria-label="LESS 2027 home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>LESS <span class="brand-year">2027</span></span></a><nav class="desktop-nav" aria-label="Primary navigation"><a href="index.html"  >Home</a><a href="program.html"  >Program</a><a href="committees.html"  >Committees</a><a href="call-for-papers.html" aria-current="page" class="nav-action">Call for Papers</a><a href="submission.html"  >Submission</a><a href="authors.html"  >Authors</a><a href="contact.html"  >Contact</a></nav><details class="mobile-menu"><summary aria-label="Open menu">☰ &nbsp; Menu</summary><nav aria-label="Mobile navigation"><a href="index.html"  >Home</a><a href="program.html"  >Program</a><a href="committees.html"  >Committees</a><a href="call-for-papers.html" aria-current="page" class="nav-action">Call for Papers</a><a href="submission.html"  >Submission</a><a href="authors.html"  >Authors</a><a href="contact.html"  >Contact</a></nav></details></div></header><main><section class="page-hero"><div class="container"><div class="eyebrow">LESS 2027 <span class="dot"></span> Call for Papers</div><h1>Call for <span style='color:#3059e9'>Papers.</span></h1><p>Application-grounded semantic extraction, task-sufficient representations and communication systems evaluated on real downstream tasks.</p><div class="crumb"><a href="index.html">Home</a> / Call for Papers</div></div></section><section class="requirement-section" id="requirement" aria-labelledby="requirement-title">
+      <div class="container">
+        <div class="requirement-header">
+          <div class="section-num inverted-num">02 / APPLICATION-GROUNDED EVALUATION REQUIREMENT</div>
+          <div class="requirement-rule">CORE SUBMISSION REQUIREMENT</div>
+        </div>
+        <h2 id="requirement-title" class="requirement-title">A concrete application is<br><em>required, not illustrative.</em></h2>
+        <p class="requirement-lead">Every submission must be grounded in a <strong>concrete and credible application scenario</strong>. An application presented only as motivation is not sufficient. Authors are expected to establish what the downstream application actually needs and to measure the consequences of communicating a derived representation rather than the original observations.</p>
+        <div class="requirement-label">Each paper is expected to make the following explicit</div>
+        <ol class="evidence-grid">
+          <li><span class="evidence-index">01</span><div><h3>Source observations</h3><p>Which physical measurements, signals, traces or original source data are available?</p></div></li>
+          <li><span class="evidence-index">02</span><div><h3>Application &amp; requirements</h3><p>What downstream task is being performed? Which information does that task require?</p></div></li>
+          <li><span class="evidence-index">03</span><div><h3>Extracted representation</h3><p>How is task-relevant information extracted and represented (e.g., event, state, intent, feature or embedding)?</p></div></li>
+          <li><span class="evidence-index">04</span><div><h3>Communicated vs. omitted</h3><p>What is sent to the receiver, and which source-level information is not communicated?</p></div></li>
+          <li><span class="evidence-index">05</span><div><h3>Application-level performance</h3><p>How well does the receiving application accomplish its task using the communicated information?</p></div></li>
+          <li><span class="evidence-index">06</span><div><h3>System-level impact</h3><p>What changes in communication, computation or overall system operation, and what trade-offs are observed?</p></div></li>
+        </ol>
+        <div class="interpretation">
+          <div class="interpretation-cell"><span class="interpretation-cap">NOT SUFFICIENT ON ITS OWN</span><p>A generic semantic encoder evaluated only through compression, reconstruction or an abstract similarity score, with an application merely cited as a possible motivation.</p></div>
+          <div class="interpretation-cell"><span class="interpretation-cap in-scope">APPLICATION-GROUNDED CONTRIBUTION</span><p>A wearable sensing system specifying which movement variable a downstream task needs, extracting it from IMU data, and evaluating task performance together with transmitted information and processing costs.</p></div>
+        </div>
+        <p class="requirement-caveat">Physical deployments are encouraged but <strong>not mandatory</strong>. Real datasets, traces, prototypes, testbeds, emulation environments and realistic system models are all welcome when the application-level evaluation is credible.</p>
+      </div>
+    </section><section class="section-pad cfp detailed-cfp" id="cfp" aria-labelledby="cfp-title">
+      <div class="container">
+        <div class="cfp-head">
+          <div><div class="section-num">03 / CALL FOR PAPERS</div><h2 class="section-title" id="cfp-title">Call for<br>Papers.</h2><p class="cfp-label">LESS 2027 &middot; Learning to Extract and Send Semantics</p></div>
+          <div>
+            <p class="cfp-main">Application-grounded extraction, representation and communication of task-sufficient information.</p>
+            <p class="cfp-copy">Networked intelligent systems operate on heterogeneous streams from sensors, wearables, biomedical platforms, microphones, cameras, radar and industrial equipment. Yet many receiving applications require only a task-sufficient representation rather than the complete source stream. LESS invites research on identifying this information, deriving it from observations, communicating it across networked systems, and experimentally verifying its sufficiency.</p>
+            <p class="cfp-copy">The workshop welcomes methodological advances together with implementations and experimental validation. Contributions should connect the original observations, the application information requirements, the representation and communication mechanism, and the resulting application- and system-level effects.</p>
+          </div>
+        </div>
+        <div class="cfp-separator"></div>
+        <div class="cfp-two-col">
+          <div><div class="mini-label">TECHNICAL PERSPECTIVE</div><h3 class="block-heading">Research questions</h3></div>
+          <div><ul class="research-questions"><li>How are downstream information requirements expressed, negotiated or updated?</li><li>Which representations preserve information sufficient for the application task?</li><li>Where should extraction occur across device, edge, network and cloud resources?</li><li>How are semantic freshness, uncertainty, relevance and requests for further information handled?</li><li>How can application utility and communication/computing costs be measured jointly?</li></ul></div>
+        </div>
+        <div class="topics-header" id="topics"><div><div class="mini-label">TOPICS OF INTEREST</div><h3 class="block-heading">Technical areas.</h3></div><p>Including, but not limited to, the following topics. The application-grounded requirement applies across all areas.</p></div>
+        <div class="topic-groups">
+          <section class="topic-group" aria-labelledby="topic-1"><div class="topic-head"><span>01</span><h4 id="topic-1">Requirements &amp; representations</h4></div><ul>
+            <li>Application-grounded semantic communication</li><li>Application-level semantic extraction</li><li>Task-sufficient semantic representations</li><li>Goal-oriented and task-oriented communication</li><li>Representation of application information requirements</li><li>Semantic interfaces between applications and networks</li>
+          </ul></section>
+          <section class="topic-group" aria-labelledby="topic-2"><div class="topic-head"><span>02</span><h4 id="topic-2">Extraction &amp; distributed intelligence</h4></div><ul>
+            <li>Semantic extraction from continuous sensor streams</li><li>Multimodal semantic representations</li><li>Edge AI for semantic extraction</li><li>Device&ndash;edge&ndash;cloud semantic processing</li><li>Distributed and split inference</li><li>Adaptive semantic representations and semantic update generation</li>
+          </ul></section>
+          <section class="topic-group" aria-labelledby="topic-3"><div class="topic-head"><span>03</span><h4 id="topic-3">Communication &amp; adaptation</h4></div><ul>
+            <li>Event-, state-, intent-, token-, feature- and embedding-based communication</li><li>Semantic filtering and relevance-aware communication</li><li>Application-aware and semantic-aware networking</li><li>Semantic freshness and Value of Information</li><li>Uncertainty and confidence in semantic representations</li><li>Processing and prioritization of semantic traffic</li><li>Mechanisms for requesting additional or source-level information</li>
+          </ul></section>
+          <section class="topic-group" aria-labelledby="topic-4"><div class="topic-head"><span>04</span><h4 id="topic-4">Sufficiency &amp; experimental evidence</h4></div><ul>
+            <li>Semantic sufficiency metrics and interoperability</li><li>Benchmarks for application utility versus communicated information</li><li>Experimental systems, datasets, testbeds and real-world deployments</li>
+          </ul></section>
+        </div>
+        <div class="cfp-two-col applications-block">
+          <div><div class="mini-label">APPLICATION DOMAINS</div><h3 class="block-heading">Where this applies.</h3></div>
+          <div><p>Relevant applications include digital health, wearable systems, sports sensing, speech and audio, industrial IoT, robotics, smart environments, intelligent transportation, autonomous systems, and integrated sensing and communication.</p><p>Cross-domain submissions are especially encouraged when they connect a concrete application need to a measurable communication or computing benefit.</p></div>
+        </div>
+        <div class="submission-box" id="submission">
+          <div><div class="mini-label">SUBMISSION INFORMATION</div><h3>Author information &amp; submission</h3><p>The final paper format, page limits, submission portal and author instructions have not yet been confirmed. They will be linked here in accordance with the official ICIN 2027 guidance.</p><p class="submission-fine">Do not interpret this placeholder as a submission link. The dates below are drawn from the proposal and remain provisional.</p></div>
+          <a href="https://www.icin-conference.org/" target="_blank" rel="noopener noreferrer">ICIN conference website <span aria-hidden="true">&nearr;</span></a>
+        </div>
+      </div>
+    </section><section class="dates-section" id="dates">
+      <div class="container"><div class="dates-title"><div><div class="section-num">04 / IMPORTANT DATES</div><h2 class="section-title">Important dates.</h2></div><p class="dates-note">Proposed deadlines from the workshop submission. Subject to final confirmation by the organizers and ICIN 2027.</p></div>
+        <div class="date-grid"><div class="date"><div class="date-type">Proposed</div><div class="date-num">03 <span>Jan 2027</span></div><div class="date-name">Paper submission</div></div><div class="date"><div class="date-type">Proposed</div><div class="date-num">18 <span>Jan 2027</span></div><div class="date-name">Acceptance notification</div></div><div class="date"><div class="date-type">Proposed</div><div class="date-num">07 <span>Feb 2027</span></div><div class="date-name">Camera-ready submission</div></div><div class="date"><div class="date-type">Workshop date*</div><div class="date-num">15 <span>Mar 2027</span></div><div class="date-name">LESS 2027 · Pisa, Italy</div></div></div>
+        <p style="color:#92959b;font-size:11px;line-height:1.6;margin-top:20px">* Workshop scheduling is subject to the final ICIN 2027 program. The host conference runs 15–18 March 2027.</p>
+      </div>
+    </section></main><footer><div class="container"><div class="footer-main"><div><p class="footer-head">LESS 2027<span style="color:#8297ff">.</span></p><p class="footer-sub">Learning to Extract and Send Semantics.</p></div><a class="footer-link" href="https://www.icin-conference.org/" target="_blank" rel="noopener noreferrer">ICIN 2027 ↗</a></div><div class="footer-bottom"><span>LESS 2027 · Pisa, Italy · An ICIN 2027 workshop</span><span>Program, dates and submission information subject to final ICIN guidance</span></div></div></footer><script>document.querySelectorAll('.portrait img').forEach(img=>{const show=()=>img.parentElement.classList.add('loaded');img.addEventListener('load',show);if(img.complete&&img.naturalWidth)show()})</script></body></html>
