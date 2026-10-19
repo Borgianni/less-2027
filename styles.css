@@ -108,3 +108,47 @@ body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}.topbar{hei
 .home-hero .hero-focus{display:inline-block;font-size:12px;font-weight:720;line-height:1.5;letter-spacing:.09em;text-transform:uppercase;color:#3059e9;border-top:1px solid #cbd3ec;padding-top:11px;margin:0 0 14px}
 .home-hero .hero-desc{font-size:15px;line-height:1.74;max-width:540px}
 @media(max-width:570px){.home-hero h1{font-size:clamp(43px,10.5vw,60px);line-height:1.035;margin-top:22px}.home-hero .hero-subtitle{font-size:clamp(21px,6vw,28px)}.home-hero .hero-focus{font-size:10px;letter-spacing:.06em}}
+
+/* LESS 2027 — official title hierarchy and academic Call for Papers */
+.home-hero h1{font-size:clamp(65px,6.5vw,104px);line-height:.99;letter-spacing:-.08em}
+.home-hero h1 .hero-title-intro{font-size:.32em;display:inline-block;letter-spacing:-.035em;vertical-align:middle;margin-bottom:8px;color:#454a54;font-weight:620}
+.home-hero h1>span:last-child{font-size:1em;display:inline-block;white-space:nowrap}
+.home-hero .hero-subtitle{font-size:clamp(28px,2.85vw,42px);line-height:1.14;max-width:640px;font-weight:660;margin-bottom:25px}
+.home-hero .hero-focus{font-size:10px;letter-spacing:.12em;margin-top:0}
+.official-cfp-heading{padding:83px 0 43px}
+.official-cfp-heading .official-cfp-sup{font-size:clamp(20px,2.2vw,31px);font-weight:640;letter-spacing:-.04em;max-width:930px;color:#32363d;margin-top:35px}
+.official-cfp-heading h1{font-size:clamp(58px,6.6vw,96px);margin:19px 0 20px;letter-spacing:-.074em}
+.official-cfp-heading .cfp-period{color:#3059e9}
+.official-cfp-heading p{font-size:16px;color:#626873;max-width:950px;line-height:1.6;margin:0}
+.official-cfp-highlights{border-top:1px solid #d6dadd;border-bottom:1px solid #d6dadd;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:35px}
+.official-cfp-highlights>span{padding:19px 16px 21px 0;color:#737983;font-size:12px}
+.official-cfp-highlights>span+span{border-left:1px solid #d6dadd;padding-left:22px}
+.official-cfp-highlights strong{display:block;font-size:17px;color:#242930;font-weight:670;letter-spacing:-.025em;margin-bottom:6px}
+.formal-cfp-content{padding-top:64px;padding-bottom:12px}
+.formal-cfp-after-rule{padding-top:54px;padding-bottom:92px}
+.formal-section{border-bottom:1px solid #dadee0;padding:0 0 56px;margin-bottom:57px}
+.formal-section:last-child{border-bottom:0;margin-bottom:0}
+.formal-section .prose{max-width:850px}
+.formal-section .prose h2{font-size:clamp(28px,3.1vw,41px);line-height:1.18;letter-spacing:-.051em;margin:0 0 24px}
+.formal-section .prose p{font-size:15px;line-height:1.9}
+.formal-topics{border-top:1px solid #d8dcde;margin-top:28px}
+.formal-topic-group{display:grid;grid-template-columns:38px 1fr;gap:12px;border-bottom:1px solid #d8dcde;padding:24px 0}
+.formal-topic-num{font-weight:770;color:#3059e9;font-size:11px;padding-top:6px}
+.formal-topic-group h3{font-size:20px;color:#262b32;font-weight:640;letter-spacing:-.035em;margin:0 0 17px}
+.formal-topic-group ul{columns:2;column-gap:31px;margin:0;padding-left:16px}
+.formal-topic-group li{break-inside:avoid;color:#646a73;font-size:13px;line-height:1.64;margin-bottom:10px}
+.formal-cfp-policy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #d8dcde;border-bottom:1px solid #d8dcde;margin:17px 0 27px}
+.formal-cfp-policy>div{padding:21px 16px 21px 0}
+.formal-cfp-policy>div+div{border-left:1px solid #d8dcde;padding-left:17px}
+.formal-cfp-policy span{display:block;color:#7b8390;letter-spacing:.1em;font-size:10px;font-weight:730;margin-bottom:9px}
+.formal-cfp-policy strong{display:block;color:#20252d;font-size:15px;line-height:1.35}
+.formal-cfp-dates{width:100%;border-collapse:collapse;margin-bottom:20px}
+.formal-cfp-dates tr{border-top:1px solid #d8dcde}
+.formal-cfp-dates tr:last-child{border-bottom:1px solid #d8dcde}
+.formal-cfp-dates th,.formal-cfp-dates td{padding:16px 8px;text-align:left;font-size:14px;line-height:1.5}
+.formal-cfp-dates th{font-weight:630;color:#343a42}
+.formal-cfp-dates td{text-align:right;color:#3059e9;font-weight:650}
+.formal-cfp-after-rule #submission{scroll-margin-top:90px}
+@media(max-width:980px){.home-hero h1{font-size:clamp(53px,8vw,77px)}.home-hero .hero-subtitle{font-size:clamp(26px,3.4vw,35px)}}
+@media(max-width:800px){.official-cfp-heading{padding:63px 0 44px}.official-cfp-heading .official-cfp-sup{margin-top:24px}.formal-cfp-content{padding-top:50px}.formal-cfp-after-rule{padding-top:45px}.formal-section{margin-bottom:39px;padding-bottom:43px}.formal-section .prose h2{font-size:32px}}
+@media(max-width:570px){.home-hero h1{font-size:clamp(48px,12vw,64px)}.home-hero h1 .hero-title-intro{font-size:.34em}.home-hero .hero-subtitle{font-size:clamp(25px,6.9vw,32px)}.official-cfp-heading h1{font-size:clamp(48px,11vw,65px)}.official-cfp-heading .official-cfp-sup{font-size:23px}.official-cfp-heading p{font-size:14px}.official-cfp-highlights{grid-template-columns:1fr}.official-cfp-highlights>span,.official-cfp-highlights>span+span{padding:12px 0;border-left:0}.official-cfp-highlights>span+span{border-top:1px solid #d6dadd}.official-cfp-highlights strong{font-size:15px}.formal-topic-group ul{columns:1}.formal-cfp-policy{grid-template-columns:1fr}.formal-cfp-policy>div,.formal-cfp-policy>div+div{padding:14px 0;border-left:0}.formal-cfp-policy>div+div{border-top:1px solid #d8dcde}.formal-cfp-dates th,.formal-cfp-dates td{font-size:12px;padding:13px 3px}.formal-section .prose h2{font-size:29px}}
