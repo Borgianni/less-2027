@@ -27,7 +27,9 @@ Submission deadline: **3 January 2027**
 Notification: **18 January 2027**  
 Camera-ready: **7 February 2027**
 
-Submissions will be managed through a LESS 2027 **EDAS subconference of ICIN 2027**. Configure the workshop in EDAS, request subconference approval, remove short/demo tracks, and update Full Paper track deadlines and page limit. Add the EDAS submission URL to the site once approved.
+**EDAS submission link:** https://edas.info/newPaper.php?c=35870&track=140815
+
+All papers must be original and unpublished, written in English in the IEEE two-column conference format, with a maximum of seven pages **including all figures, tables, and references**. Accepted and presented papers will be included in the ICIN 2027 conference proceedings. IEEE templates: https://www.ieee.org/conferences/publishing/templates.html
 
 ## Organizer photos
 
@@ -48,4 +50,4 @@ Settings → Pages → Deploy from a branch → `main` → `/(root)`.
 - Official ICIN 2027 workshop chair instructions.
 - ICIN 2027 workshop webpage: https://www.icin-conference.org/index.php/call-for-workshops/
 
-The EDAS submission link and final manuscript-format details remain to be confirmed.
+The Call for Papers text supplied by the workshop organizers is authoritative; the workshop-specific EDAS link is active.
