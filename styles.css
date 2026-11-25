@@ -166,3 +166,15 @@ body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}.topbar{hei
 .official-cfp-heading .hero-actions{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
 .official-cfp-heading .official-cfp-highlights>span strong{font-size:16px}
 @media(max-width:700px){.final-cfp .final-cfp-topics{columns:1}.final-cfp .final-cfp-topics li{padding:12px 4px}.official-cfp-heading .hero-actions{gap:12px}.final-cfp .formal-section{scroll-margin-top:65px}}
+
+/* Organizing team: 3 portraits at the top; TPC co-chair has his own committee profile. */
+.organizer-band{grid-template-columns:160px repeat(3,minmax(0,1fr));gap:18px}
+.organizer-mini{gap:13px;min-width:0}
+.organizer-mini h3{font-size:15px}
+.organizer-mini .portrait{width:65px;height:78px}
+.organizer-role{font-size:10px;font-weight:700;color:#3059e9;letter-spacing:.02em}
+.tpc-lead-grid{margin-top:24px;margin-bottom:65px}
+.tpc-lead-grid .profile-card{max-width:560px}
+@media(max-width:1120px){.organizer-band{grid-template-columns:145px repeat(3,minmax(0,1fr));gap:10px}.organizer-mini{gap:9px}.organizer-mini .portrait{width:57px;height:71px}.organizer-mini h3{font-size:13px}.organizer-mini p{font-size:11px}}
+@media(max-width:950px){.organizer-band{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.organizer-label{grid-column:1/-1}.organizer-mini .portrait{width:73px;height:86px}.organizer-mini h3{font-size:15px}}
+@media(max-width:570px){.organizer-band{grid-template-columns:1fr}.organizer-label{grid-column:auto}.organizer-mini{gap:15px}.organizer-mini .portrait{width:75px;height:88px}.organizer-mini h3{font-size:16px}.tpc-lead-grid .profile-card{max-width:none}}
