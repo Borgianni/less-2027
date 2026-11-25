@@ -1,1 +1,2 @@
 To display organizer photographs, upload assets/luca-borgianni.jpg and assets/sebastian-troia.jpg to this folder. The website automatically replaces the initials with those images; no HTML editing is necessary. Use cropped portrait JPGs, ideally at least 500 pixels wide. Exact filenames are case-sensitive.
+TPC Co-Chair photo: assets/andrea-marotta.jpg (University of L'Aquila, Italy). The website shows the uploaded photo on Home and Committees.
