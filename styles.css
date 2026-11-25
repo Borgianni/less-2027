@@ -178,3 +178,15 @@ body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}.topbar{hei
 @media(max-width:1120px){.organizer-band{grid-template-columns:145px repeat(3,minmax(0,1fr));gap:10px}.organizer-mini{gap:9px}.organizer-mini .portrait{width:57px;height:71px}.organizer-mini h3{font-size:13px}.organizer-mini p{font-size:11px}}
 @media(max-width:950px){.organizer-band{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.organizer-label{grid-column:1/-1}.organizer-mini .portrait{width:73px;height:86px}.organizer-mini h3{font-size:15px}}
 @media(max-width:570px){.organizer-band{grid-template-columns:1fr}.organizer-label{grid-column:auto}.organizer-mini{gap:15px}.organizer-mini .portrait{width:75px;height:88px}.organizer-mini h3{font-size:16px}.tpc-lead-grid .profile-card{max-width:none}}
+
+/* Four organizing team profiles: responsive layout for General Chairs and TPC Co-Chairs. */
+.organizer-band{grid-template-columns:135px repeat(4,minmax(0,1fr));gap:15px}
+.organizer-mini{gap:9px;min-width:0}
+.organizer-mini .portrait{width:56px;height:71px}
+.organizer-mini h3{font-size:13px;line-height:1.25}
+.organizer-mini p{font-size:10.5px}
+.tpc-lead-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.tpc-lead-grid .profile-card{max-width:none}
+@media(max-width:1200px){.organizer-band{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.organizer-label{grid-column:1/-1;flex-direction:row;justify-content:space-between}.organizer-mini .portrait{width:73px;height:86px}.organizer-mini h3{font-size:15px}.organizer-mini p{font-size:12px}}
+@media(max-width:760px){.tpc-lead-grid{grid-template-columns:1fr}}
+@media(max-width:570px){.organizer-band{grid-template-columns:1fr}.organizer-label{grid-column:auto}.organizer-mini .portrait{width:75px;height:88px}.organizer-mini h3{font-size:16px}}
